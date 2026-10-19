@@ -55,7 +55,7 @@
       <div class="container">
         <img class="logo" src="assets/icon.svg" width="84" height="84" alt="Ripple app icon">
         <h1>Privacy Policy</h1>
-        <p class="meta">Ripple - Habit Tracker · Effective 6 October 2026</p>
+        <p class="meta">Ripple - Habit Tracker · Effective 19 October 2026</p>
         <div class="chips">
           <span class="chip">Ripple Free · <code>com.ripple.app.ripple.free</code></span>
           <span class="chip">Ripple Pro · <code>com.ripple.app.ripple.pro</code></span>
@@ -104,9 +104,13 @@
             <li>Reminder times and the completion times that Smart Reminders learn from.</li>
             <li>Mood journal entries and notes, focus-timer sessions, achievements and challenge progress.</li>
             <li>Accountability buddies you've added (the display name, emoji and progress in the codes you scanned or pasted) and your own buddy name.</li>
+            <li>Focus Lock settings (each habit's lock times, days and chosen apps), timed app locks and daily app limits.</li>
             <li>Settings such as theme, accent colour, font, week start and app icon.</li>
             <li><strong>Ripple Free only:</strong> the extra habits, starred habits, card styles, fonts and accent colours you've unlocked by watching rewarded ads.</li>
           </ul>
+          <h3>Screen time (optional)</h3>
+          <p>If you open <em>Screen Time</em> or use <em>Focus Lock</em>, Ripple asks you to turn on <strong>Usage access</strong> in Android Settings. With it, Ripple reads from Android which apps you used, when and for how long, how often you opened them and how often you unlocked your phone. It uses this only to show your screen time, to enforce the locks and limits you set, and to list your most-used apps first when you choose apps to lock. Ripple reads these numbers when it needs them and doesn't store them, include them in backups or send them anywhere.</p>
+          <p>To let you choose apps to lock, Ripple reads the list of apps that have a home-screen icon (their names and icons) on your phone. The apps you pick, your lock times and your daily limits stay on your phone; Focus Lock settings and daily limits are included in your backups.</p>
           <h3>Feedback emails</h3>
           <p>If you tap <em>Request a Feature</em> or <em>Report a Bug</em>, your own email app opens a draft to the developer with the app version and device model filled in (you can remove them). If you send it, we receive your message and email address and use them only to reply to you and improve Ripple.</p>
         </section>
@@ -160,9 +164,12 @@
                 <tr><th>Alarms &amp; reminders (exact alarms)</th><td>Free &amp; Pro</td><td>So reminders and focus-timer alerts arrive at the exact minute you set, not delayed by battery saving. Ripple has no alarm feature; nothing rings, you only get a normal notification. Granted at install, with no prompt.</td></tr>
                 <tr><th>Vibration, run at startup</th><td>Free &amp; Pro</td><td>Vibrate with a reminder, and restore your reminders after the phone restarts. No prompt.</td></tr>
                 <tr><th>Camera (optional)</th><td>Free &amp; Pro</td><td>Only when you tap <em>Scan QR</em> to add a buddy. Frames are analysed on your phone and never saved or uploaded. You can paste a code instead.</td></tr>
+                <tr><th>Usage access (optional)</th><td>Free &amp; Pro</td><td>Screen Time and Focus Lock: read which apps you use and for how long, on your phone only. You turn it on yourself in Android Settings and can turn it off there.</td></tr>
+                <tr><th>Display over other apps (optional)</th><td>Free &amp; Pro</td><td>Lets Focus Lock cover a locked app with Ripple's lock screen. You turn it on yourself in Android Settings.</td></tr>
+                <tr><th>Foreground service</th><td>Free &amp; Pro</td><td>Keeps Focus Lock running, with an ongoing "Focus Lock" notification, only while an app lock, Focus Lock or daily limit is active. No prompt.</td></tr>
                 <tr><th>Internet, network state</th><td>Free &amp; Pro</td><td>Download app fonts from Google Fonts and let Google ML Kit (QR scanning) work. In Ripple Free, also to load ads. Never used to send your habit data anywhere.</td></tr>
                 <tr><th>Advertising ID, Android ad services (attribution, topics)</th><td>Free only</td><td>Added by the Google Mobile Ads SDK so ads can be shown and measured. Limit or reset it in your phone's settings.</td></tr>
-                <tr><th>Wake lock, foreground service</th><td>Free only</td><td>Added by the Google Mobile Ads SDK's libraries for short background tasks. Ripple's own features don't use them.</td></tr>
+                <tr><th>Wake lock</th><td>Free only</td><td>Added by the Google Mobile Ads SDK's libraries for short background tasks. Ripple's own features don't use it. (The ads SDK also declares a foreground service; Ripple's own one is described above.)</td></tr>
               </tbody>
             </table>
           </div>
@@ -186,7 +193,8 @@
           <ul>
             <li><strong>Delete everything:</strong> <em>Settings › Reset all data</em>, or uninstall Ripple. (In Ripple Free, ad unlocks you've earned are kept on reset, since you earned them.)</li>
             <li><strong>Ads personalisation (Free):</strong> change consent in <em>Settings › Ad privacy choices</em> where offered, and reset or delete your advertising ID in your phone's settings (<em>Settings › Privacy › Ads</em>, or <em>Google › Ads</em> on some phones).</li>
-            <li><strong>Permissions:</strong> turn off notifications or camera access in your phone's settings at any time.</li>
+            <li><strong>Permissions:</strong> turn off notifications, camera, usage access or display over other apps in your phone's settings at any time.</li>
+            <li><strong>Focus Lock and limits:</strong> end a timed lock in <em>Explore › Screen Time</em>, remove a daily limit from an app's page there, or turn off Focus Lock in the habit's editor.</li>
             <li><strong>Fonts:</strong> pick <em>System Default</em> to stop font downloads.</li>
             <li><strong>Feedback emails:</strong> ask us to delete your emails by writing to the address below.</li>
           </ul>
